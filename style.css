@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    min-height:100vh;
+    padding:40px 20px;
+     background-color: #E0F7FA;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+               "Helvetica Neue", Arial, sans-serif;
+     position: relative;
+}
+.calculator-container{
+    width: 80%;
+    background: #333;
+    border-radius: 12px;
+    padding:20px;
+    box-shadow: 0 4px 12px rgba(0, 0,0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width:600px;
+}
+.input-section{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    border-radius: 10px;
+    padding:20px;
+    border:1px solid rgb(239, 216, 216);
+    background-color: rgb(130, 119, 119);
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+label, .form-control > p{
+   font-size:0.9rem;
+   font-weight: 600;
+   color:#4B5A6A;
+   margin-bottom: 8px;
+ }
+.input-field{
+    width:100%;
+    padding:10px 12px;
+    font-size:1rem;
+    border: 1px solid#ccc;
+    border-radius: 10px;
+    margin-bottom:8px;
+    background-color: #f9f9f9;
+    color: black;
+}
+.tip-options{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tip-btn, #custom-tip{
+    background-color: #00474B;
+    color: #fff;
+    border:none;
+    padding:10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight:600;
+    transition: background 0.3s ease;
+    text-align: center;
+    min-width: 50px;
+    flex: 1 1 calc(25% -10px);
+}
+.tip-btn:hover,
+.tip-btn.active {
+  background-color: #26C2AD;
+   color: #00474B;     
+}
+#custom-tip {
+  padding: 12px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.output-section{
+    background-color: #00474B;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0,0, 0.2);
+    margin-top: 30px;
+}
+.result-line{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+    
+}
+.result-label p{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 2px;
+    color: #FFFF;
+}
+.result-value span{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #7FA8A9;
+    display: block;
+}
+.reset-button{
+    width: 100%;
+    padding:12px;
+    font-size: 1rem;
+   font-weight: 600;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: background 0.3s ease;
+   margin-top: 20px;
+   color: #fff;
+   background-color: #FF5722;
+}
+.reset-button:hover {
+  background-color: #E64A19;
+}
+@media(max-width:680px){
+    
+}

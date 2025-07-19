@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tip Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Main Calculator -->
+   <section class="calculator-container">
+      <section class="input-section">
+         <!-- Bill input -->
+         <div class="form-control">
+            <label for="bill">Bill Amount (NPR)</label>
+            <input type="number" id="bill" class="input-field" placeholder="0" min="0">
+         </div>
+
+         <!-- Tip Selection -->
+        <div class="form-control">
+   <label for="custom-tip">Select Tip %</label>
+   <div class="tip-options">
+      <button class="tip-btn" data-tip="5">5%</button>
+      <button class="tip-btn" data-tip="10">10%</button>
+      <button class="tip-btn" data-tip="15">15%</button>
+      <button class="tip-btn" data-tip="20">20%</button>
+      <input type="number" id="custom-tip" class="input-field tip-custom-input" placeholder="Custom %" min="0">
+   </div>
+</div>
+
+         <!-- Number of People -->
+         <div class="form-control">
+            <label for="num-people">Number of People</label>
+            <input type="number" id="num-people" class="input-field" placeholder="1" min="1">
+         </div>
+      </section>
+
+      <!-- Output Section -->
+      <section class="output-section">
+         <div class="result-line">
+            <div class="result-label">
+               <p>Tip Amount</p>
+               <span>per person</span>
+            </div>
+            <div class="result-value">
+               <span id="tip-amount-display">NPR 0.00</span>
+            </div>
+         </div>
+         <button type="button" id="reset-btn" class="reset-button">Reset</button>
+      </section>
+   </section>
+
+   <!-- Script Link -->
+   <script src="script.js" ></script>
+</body>
+</html>
