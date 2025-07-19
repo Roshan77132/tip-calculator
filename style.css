@@ -127,5 +127,37 @@ label, .form-control > p{
   background-color: #E64A19;
 }
 @media(max-width:680px){
-    
-}
+body{
+        padding: 20px 10px;
+    }
+    .calculator-container{
+        width:95%;
+        padding: 15px;
+        gap:20px;
+    }
+      .input-section {
+        padding: 15px;
+        gap: 18px;
+    }
+       
+    .tip-options {
+        gap: 8px;
+    }
+       
+    .tip-btn, #custom-tip {
+        flex: 1 1 calc(50% - 8px); /* 2 buttons per row on small screens */
+        padding: 8px 0;
+        font-size: 0.9rem;
+    }
+     .output-section {
+        padding: 15px;
+        margin-top: 20px;
+    }
+     .result-line {
+        margin-bottom: 15px;
+    }
+       .reset-button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+   }
